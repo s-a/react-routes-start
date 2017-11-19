@@ -1,0 +1,7 @@
+{
+    "welcome": "Bienvenido {username}!",
+    "buttons": {
+        "exit": "Salir",
+        "start": "Iniciar"
+    }
+}
