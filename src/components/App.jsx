@@ -1,12 +1,22 @@
 import {
   BrowserRouter as Router,
-  // Route,
-  Link
+  Switch, Route,
+  Link,
+  Redirect
 } from 'react-router-dom'
 import React, { Component } from 'react';
-import RouteWithSubRoutes from './RouteWithSubRoutes.jsx';
+
 import routes from './routes.jsx';
-import { withRouter } from 'react-router'
+
+import JsonDump from './JsonDump.jsx';
+import Main from './Main.jsx';
+import Tacos from './Tacos.jsx';
+import Bus from './Bus.jsx';
+import Cart from './Cart.jsx';
+import Sandwiches from './Sandwiches.jsx';
+
+
+const locale = require('./language.js')
 
 var T = require('i18n-react').default;
 
@@ -30,29 +40,23 @@ T.setTexts(translations, {
 // Set some texts
 T.setTexts(translations);
 
-
 class App extends Component {
-
-
-
   render() {
-    const { match, location, history } = this.props
     return (
       <Router>
         <div>
-          <div>You are now at {this.props.location}</div>
+          <Switch>
+            <Redirect from="/" exact to={locale.url(locale.id, '', this.props)} />
+          </Switch>
 
-          <strong>{T.translate("welcome", { username: "Bruce Wayne" })}</strong>
-          <ul>
-            <li><Link to="/tacos">Tacos</Link></li>
-            <li><Link to="/sandwiches">Sandwiches</Link></li>
-          </ul>
-          {routes.map((route, i) => (
-            <RouteWithSubRoutes key={i} {...route} />
-          ))}
+
+          <Route path="/:locale" component={Main} />
+          <Route path="/:locale/tacos" component={Tacos} />
+          <Route path="/:locale/tacos/bus" component={Bus} />
+          <Route path="/:locale/tacos/cart" component={Cart} />
+          <Route path="/:locale/sandwiches" component={Sandwiches} />
         </div>
       </Router>
-
     );
   }
 }

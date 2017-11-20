@@ -1,0 +1,468 @@
+{
+    "props": {},
+    "context": {},
+    "updater": {},
+    "_reactInternalFiber": {
+        "tag": 2,
+        "key": null,
+        "return": {
+            "tag": 3,
+            "key": null,
+            "type": null,
+            "stateNode": {
+                "current": {
+                    "tag": 3,
+                    "key": null,
+                    "type": null,
+                    "return": null,
+                    "child": null,
+                    "sibling": null,
+                    "index": 0,
+                    "ref": null,
+                    "pendingProps": null,
+                    "memoizedProps": null,
+                    "updateQueue": {
+                        "baseState": null,
+                        "expirationTime": 1,
+                        "first": {
+                            "expirationTime": 1,
+                            "partialState": {
+                                "element": {
+                                    "key": null,
+                                    "ref": null,
+                                    "_owner": null,
+                                    "_store": {}
+                                }
+                            },
+                            "callback": null,
+                            "isReplace": false,
+                            "isForced": false,
+                            "nextCallback": null,
+                            "next": null
+                        },
+                        "callbackList": null,
+                        "hasForceUpdate": false,
+                        "isInitialized": false,
+                        "isProcessing": false
+                    },
+                    "memoizedState": null,
+                    "internalContextTag": 0,
+                    "effectTag": 0,
+                    "nextEffect": null,
+                    "firstEffect": null,
+                    "lastEffect": null,
+                    "expirationTime": 1,
+                    "_debugID": 1,
+                    "_debugSource": null,
+                    "_debugOwner": null,
+                    "_debugIsCurrentlyTiming": false
+                },
+                "containerInfo": {},
+                "pendingChildren": null,
+                "remainingExpirationTime": 1,
+                "isReadyForCommit": false,
+                "finishedWork": null,
+                "pendingContext": null,
+                "hydrate": false
+            },
+            "return": null,
+            "sibling": null,
+            "index": 0,
+            "ref": null,
+            "pendingProps": null,
+            "memoizedProps": null,
+            "updateQueue": null,
+            "memoizedState": {},
+            "internalContextTag": 0,
+            "effectTag": 0,
+            "nextEffect": null,
+            "firstEffect": null,
+            "lastEffect": null,
+            "expirationTime": 1,
+            "_debugID": 1,
+            "_debugSource": null,
+            "_debugOwner": null,
+            "_debugIsCurrentlyTiming": false
+        },
+        "child": {
+            "tag": 2,
+            "key": null,
+            "stateNode": {
+                "props": {
+                    "children": {
+                        "type": "div",
+                        "key": null,
+                        "ref": null,
+                        "props": {
+                            "children": ["\"", {
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {},
+                                    "_store": {}
+                                }, "\"", {
+                                    "type": "div",
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                        "children": "You are now at "
+                                    },
+                                    "_store": {}
+                                }, {
+                                    "type": "strong",
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                        "children": "Guten Tag Bruce Wayne!"
+                                    },
+                                    "_store": {}
+                                }, {
+                                    "type": "ul",
+                                    "key": null,
+                                    "ref": null,
+                                    "props": {
+                                        "children": [{
+                                            "type": "li",
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                                "children": {
+                                                    "key": null,
+                                                    "ref": null,
+                                                    "props": {
+                                                        "to": "/:language/tacos",
+                                                        "children": "Tacos",
+                                                        "replace": false
+                                                    },
+                                                    "_store": {}
+                                                }
+                                            },
+                                            "_store": {}
+                                        }, {
+                                            "type": "li",
+                                            "key": null,
+                                            "ref": null,
+                                            "props": {
+                                                "children": {
+                                                    "key": null,
+                                                    "ref": null,
+                                                    "props": {
+                                                        "to": "/:language/sandwiches",
+                                                        "children": "Sandwiches",
+                                                        "replace": false
+                                                    },
+                                                    "_store": {}
+                                                }
+                                            },
+                                            "_store": {}
+                                        }]
+                                    },
+                                    "_store": {}
+                                },
+                                [{
+                                    "key": "0",
+                                    "ref": null,
+                                    "props": {
+                                        "path": "/:language/sandwiches"
+                                    },
+                                    "_store": {}
+                                }, {
+                                    "key": "1",
+                                    "ref": null,
+                                    "props": {
+                                        "path": "/:language/tacos",
+                                        "routes": [{
+                                            "path": "/:language/tacos/bus"
+                                        }, {
+                                            "path": "/:language/tacos/cart"
+                                        }]
+                                    },
+                                    "_store": {}
+                                }]
+                            ]
+                        },
+                        "_store": {}
+                    }
+                },
+                "history": {
+                    "length": 50,
+                    "action": "POP",
+                    "location": {
+                        "pathname": "/de/tacos/bus",
+                        "search": "",
+                        "hash": ""
+                    }
+                },
+                "_reactInternalInstance": {},
+                "state": null
+            },
+            "child": {
+                "tag": 2,
+                "key": null,
+                "stateNode": {
+                    "props": {},
+                    "context": {},
+                    "state": {
+                        "match": {
+                            "path": "/",
+                            "url": "/",
+                            "params": {},
+                            "isExact": false
+                        }
+                    },
+                    "__reactInternalMemoizedMergedChildContext": {
+                        "router": {
+                            "route": {}
+                        }
+                    }
+                },
+                "child": {
+                    "tag": 5,
+                    "key": null,
+                    "type": "div",
+                    "stateNode": null,
+                    "child": {
+                        "tag": 6,
+                        "key": null,
+                        "type": null,
+                        "stateNode": {},
+                        "child": null,
+                        "sibling": {
+                            "tag": 0,
+                            "key": null,
+                            "stateNode": null,
+                            "child": null,
+                            "sibling": {
+                                "tag": 6,
+                                "key": null,
+                                "type": null,
+                                "stateNode": null,
+                                "child": null,
+                                "sibling": {
+                                    "tag": 5,
+                                    "key": null,
+                                    "type": "div",
+                                    "stateNode": null,
+                                    "child": null,
+                                    "sibling": {
+                                        "tag": 5,
+                                        "key": null,
+                                        "type": "strong",
+                                        "stateNode": null,
+                                        "child": null,
+                                        "sibling": {
+                                            "tag": 5,
+                                            "key": null,
+                                            "type": "ul",
+                                            "stateNode": null,
+                                            "child": null,
+                                            "sibling": {
+                                                "tag": 10,
+                                                "key": null,
+                                                "type": null,
+                                                "stateNode": null,
+                                                "child": null,
+                                                "sibling": null,
+                                                "index": 6,
+                                                "ref": null,
+                                                "memoizedProps": null,
+                                                "updateQueue": null,
+                                                "memoizedState": null,
+                                                "internalContextTag": 0,
+                                                "effectTag": 0,
+                                                "nextEffect": null,
+                                                "firstEffect": null,
+                                                "lastEffect": null,
+                                                "expirationTime": 1,
+                                                "alternate": null,
+                                                "_debugID": 13,
+                                                "_debugSource": null,
+                                                "_debugOwner": null,
+                                                "_debugIsCurrentlyTiming": false
+                                            },
+                                            "index": 5,
+                                            "ref": null,
+                                            "memoizedProps": null,
+                                            "updateQueue": null,
+                                            "memoizedState": null,
+                                            "internalContextTag": 0,
+                                            "effectTag": 0,
+                                            "nextEffect": null,
+                                            "firstEffect": null,
+                                            "lastEffect": null,
+                                            "expirationTime": 1,
+                                            "alternate": null,
+                                            "_debugID": 12,
+                                            "_debugSource": {
+                                                "fileName": "c:\\git\\device\\my-app\\src\\components\\App.jsx",
+                                                "lineNumber": 62
+                                            },
+                                            "_debugIsCurrentlyTiming": false
+                                        },
+                                        "index": 4,
+                                        "ref": null,
+                                        "memoizedProps": null,
+                                        "updateQueue": null,
+                                        "memoizedState": null,
+                                        "internalContextTag": 0,
+                                        "effectTag": 0,
+                                        "nextEffect": null,
+                                        "firstEffect": null,
+                                        "lastEffect": null,
+                                        "expirationTime": 1,
+                                        "alternate": null,
+                                        "_debugID": 11,
+                                        "_debugSource": {
+                                            "fileName": "c:\\git\\device\\my-app\\src\\components\\App.jsx",
+                                            "lineNumber": 61
+                                        },
+                                        "_debugIsCurrentlyTiming": false
+                                    },
+                                    "index": 3,
+                                    "ref": null,
+                                    "memoizedProps": null,
+                                    "updateQueue": null,
+                                    "memoizedState": null,
+                                    "internalContextTag": 0,
+                                    "effectTag": 0,
+                                    "nextEffect": null,
+                                    "firstEffect": null,
+                                    "lastEffect": null,
+                                    "expirationTime": 1,
+                                    "alternate": null,
+                                    "_debugID": 10,
+                                    "_debugSource": {
+                                        "fileName": "c:\\git\\device\\my-app\\src\\components\\App.jsx",
+                                        "lineNumber": 59
+                                    },
+                                    "_debugIsCurrentlyTiming": false
+                                },
+                                "index": 2,
+                                "ref": null,
+                                "pendingProps": "\"",
+                                "memoizedProps": null,
+                                "updateQueue": null,
+                                "memoizedState": null,
+                                "internalContextTag": 0,
+                                "effectTag": 0,
+                                "nextEffect": null,
+                                "firstEffect": null,
+                                "lastEffect": null,
+                                "expirationTime": 1,
+                                "alternate": null,
+                                "_debugID": 9,
+                                "_debugSource": null,
+                                "_debugOwner": null,
+                                "_debugIsCurrentlyTiming": false
+                            },
+                            "index": 1,
+                            "ref": null,
+                            "memoizedProps": null,
+                            "updateQueue": null,
+                            "memoizedState": null,
+                            "internalContextTag": 0,
+                            "effectTag": 0,
+                            "nextEffect": null,
+                            "firstEffect": null,
+                            "lastEffect": null,
+                            "expirationTime": 1,
+                            "alternate": null,
+                            "_debugID": 8,
+                            "_debugSource": {
+                                "fileName": "c:\\git\\device\\my-app\\src\\components\\App.jsx",
+                                "lineNumber": 58
+                            },
+                            "_debugIsCurrentlyTiming": true
+                        },
+                        "index": 0,
+                        "ref": null,
+                        "pendingProps": null,
+                        "memoizedProps": "\"",
+                        "updateQueue": null,
+                        "memoizedState": null,
+                        "internalContextTag": 0,
+                        "effectTag": 0,
+                        "nextEffect": null,
+                        "firstEffect": null,
+                        "lastEffect": null,
+                        "expirationTime": 0,
+                        "alternate": null,
+                        "_debugID": 7,
+                        "_debugSource": null,
+                        "_debugOwner": null,
+                        "_debugIsCurrentlyTiming": false
+                    },
+                    "sibling": null,
+                    "index": 0,
+                    "ref": null,
+                    "updateQueue": null,
+                    "memoizedState": null,
+                    "internalContextTag": 0,
+                    "effectTag": 0,
+                    "nextEffect": null,
+                    "firstEffect": null,
+                    "lastEffect": null,
+                    "expirationTime": 1,
+                    "alternate": null,
+                    "_debugID": 6,
+                    "_debugSource": {
+                        "fileName": "c:\\git\\device\\my-app\\src\\components\\App.jsx",
+                        "lineNumber": 57
+                    },
+                    "_debugIsCurrentlyTiming": false
+                },
+                "sibling": null,
+                "index": 0,
+                "ref": null,
+                "updateQueue": null,
+                "internalContextTag": 0,
+                "effectTag": 1,
+                "nextEffect": null,
+                "firstEffect": null,
+                "lastEffect": null,
+                "expirationTime": 1,
+                "alternate": null,
+                "_debugID": 5,
+                "_debugSource": null,
+                "_debugIsCurrentlyTiming": true
+            },
+            "sibling": null,
+            "index": 0,
+            "ref": null,
+            "updateQueue": null,
+            "memoizedState": null,
+            "internalContextTag": 0,
+            "effectTag": 1,
+            "nextEffect": null,
+            "firstEffect": null,
+            "lastEffect": null,
+            "expirationTime": 1,
+            "alternate": null,
+            "_debugID": 4,
+            "_debugSource": {
+                "fileName": "c:\\git\\device\\my-app\\src\\components\\App.jsx",
+                "lineNumber": 56
+            },
+            "_debugIsCurrentlyTiming": true
+        },
+        "sibling": null,
+        "index": 0,
+        "ref": null,
+        "updateQueue": null,
+        "memoizedState": null,
+        "internalContextTag": 0,
+        "effectTag": 3,
+        "nextEffect": null,
+        "firstEffect": null,
+        "lastEffect": null,
+        "expirationTime": 1,
+        "alternate": null,
+        "_debugID": 3,
+        "_debugSource": {
+            "fileName": "c:\\git\\device\\my-app\\src\\index.js",
+            "lineNumber": 7
+        },
+        "_debugOwner": null,
+        "_debugIsCurrentlyTiming": true
+    },
+    "state": null
+}

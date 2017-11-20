@@ -1,28 +1,26 @@
 import {
     //    BrowserRouter as Router,
-    //    Route,
+
     Link
 } from 'react-router-dom'
 import React/* , { Component } */ from 'react';
-// import routes from 'routes.json'
-
 import RouteWithSubRoutes from './RouteWithSubRoutes.jsx';
+import JsonDump from './JsonDump.jsx';
+const locale = require('./language.js')
 
 
-const Tacos = ({ routes }) => (
+const Tacos = (path) => (
     <div>
         <h2>Tacos</h2>
+        <JsonDump data={path.match.params.locale}></JsonDump>
+
         <ul>
-            <li><Link to="/tacos/bus">Bus</Link></li>
-            <li><Link to="/tacos/cart">Cart</Link></li>
+            <li><Link to={locale.url(path.match.params.locale, 'tacos/bus')} >Bus {""}</Link></li>
+            <li><Link to={locale.url(path.match.params.locale, 'tacos/cart')}>Cart </Link></li>
         </ul>
 
-        {routes.map((route, i) => (
-            <RouteWithSubRoutes key={i} {...route} />
-        ))}
+
     </div>
 )
-
-
 
 export default Tacos;
