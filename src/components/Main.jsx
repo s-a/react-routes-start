@@ -6,9 +6,7 @@ import {
 } from 'react-router-dom'
 import React, { Component } from 'react';
 
-import RouteWithSubRoutes from './RouteWithSubRoutes.jsx';
 import JsonDump from './JsonDump.jsx';
-import routes from './routes.jsx';
 const locale = require('./language.js')
 
 var T = require('i18n-react').default;

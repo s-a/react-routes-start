@@ -5,7 +5,6 @@ import {
   Redirect
 } from 'react-router-dom'
 import React, { Component } from 'react';
-import routes from './routes.jsx';
 import JsonDump from './JsonDump.jsx';
 import Main from './Main.jsx';
 import Tacos from './Tacos.jsx';
