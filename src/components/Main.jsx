@@ -13,25 +13,7 @@ const locale = require('./language.js')
 
 var T = require('i18n-react').default;
 
-var translations = {
-    welcome: "Guten Tag {username}!",
-    buttons: {
-        exit: "Schließen",
-        start: "Starten"
-    }
-}
 
-T.setTexts(require('./locales/es.json'));
-// Render component again ... voila in Spanish
-// this.forceUpdate();
-
-// you can combine this solution with markdown!
-T.setTexts(translations, {
-    notFound: key => `**${key}**` // will render <strong>SomeKey</strong>
-})
-
-// Set some texts
-T.setTexts(translations);
 
 const Main = (path) => (
     <div>

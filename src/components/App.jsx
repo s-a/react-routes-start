@@ -20,35 +20,42 @@ const locale = require('./language.js')
 
 var T = require('i18n-react').default;
 
-var translations = {
-  welcome: "Guten Tag {username}!",
-  buttons: {
-    exit: "Schließen",
-    start: "Starten"
+
+var dictionary = {
+  "de-DE": {
+    welcome: "Guten Tag {username}!"
+  },
+  "en-GB": {
+    welcome: "Welcome {username}!"
   }
 }
 
-T.setTexts(require('./locales/es.json'));
+// T.setTexts(require('./locales/es.json'));
 // Render component again ... voila in Spanish
 // this.forceUpdate();
 
-// you can combine this solution with markdown!
-T.setTexts(translations, {
-  notFound: key => `**${key}**` // will render <strong>SomeKey</strong>
-})
 
-// Set some texts
-T.setTexts(translations);
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { locale: process.env.REACT_APP_LOCALE || locale.id };
+    debugger;
+    // you can combine this solution with markdown!
+    T.setTexts(dictionary[this.state.locale], {
+      notFound: key => `**${key}**` // will render <strong>SomeKey</strong>
+    })
+  }
+
+
   render() {
     return (
       <Router>
         <div>
           <Switch>
-            <Redirect from="/" exact to={locale.url(locale.id, '', this.props)} />
+            <Redirect from="/" exact to={locale.url(this.state.locale, '', this.props)} />
           </Switch>
-
 
           <Route path="/:locale" component={Main} />
           <Route path="/:locale/tacos" component={Tacos} />

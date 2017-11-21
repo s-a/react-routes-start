@@ -10,8 +10,8 @@ if (locale.length > 2) {
 
 module.exports = {
     "id": locale,
-    "url": function (lng, target) {
+    "url": function (localeName, target) {
         // console.log(data)
-        return `/${lng}/${target}`
+        return `/${localeName}/${target}`
     }
 }
