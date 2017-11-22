@@ -30,14 +30,21 @@ class App extends Component {
 
     $.ajax({
       url: url,
+      headers: {
+        'accept-version': (process.env.REACT_APP_ACCEPT_API_VERSION || '~1')
+      },
       success: function (result) {
         debugger
         if (result.isOk == false) {
         }
       },
       error: function (jqXHR, textStatus, errorThrown) {
+        debugger
         if (jqXHR.status === 502) {
           alert('It seems that the API server is not running. Start it and reload this page.')
+        }
+        if (jqXHR.status === 400) {
+          alert(jqXHR.responseJSON.message)
         }
       },
       async: false
