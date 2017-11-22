@@ -26,7 +26,7 @@ class App extends Component {
 
     };
 
-    var url = '/api/content'
+    var url = '/api/ping'
 
     $.ajax({
       url: url,
@@ -36,8 +36,9 @@ class App extends Component {
         }
       },
       error: function (jqXHR, textStatus, errorThrown) {
-        debugger
-        alert(jqXHR.status)
+        if (jqXHR.status === 502) {
+          alert('It seems that the API server is not running. Start it and reload this page.')
+        }
       },
       async: false
     });
