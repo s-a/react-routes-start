@@ -3,20 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cross-env": "^5.1.1",
     "i18n-react": "^0.6.3",
+    "jquery": "^3.2.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "reverse-proxy-starter": "^1.0.1"
   },
   "scripts": {
-    "dev": "cross-env REACT_APP_LOCALE=\"en-GB\" npm run start",
-    "start": "react-scripts start",
+    "env": "cross-env REACT_APP_API_ENDPOINT=\"//localhost:8001\" cross-env REACT_APP_LOCALE=\"en-GB\"",
+    "dev": "react-scripts start",
+    "start": "npm run env react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "cross-env": "^5.1.1"
+    "eject": "react-scripts eject",
+    "proxy": "node node_modules/reverse-proxy-starter/lib/index.js localhost http://127.0.0.1:3000 localhost/api http://127.0.0.1:8001 --port 8080"
   }
 }

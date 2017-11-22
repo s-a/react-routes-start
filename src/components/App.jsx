@@ -11,6 +11,7 @@ import Tacos from './Tacos.jsx';
 import Bus from './Bus.jsx';
 import Cart from './Cart.jsx';
 import Sandwiches from './Sandwiches.jsx';
+import $ from 'jquery';
 
 const locale = require('./language.js')
 
@@ -19,15 +20,36 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { locale: process.env.REACT_APP_LOCALE || locale.id };
+    this.state = {
+      locale: process.env.REACT_APP_LOCALE || locale.id,
+      api: process.env.REACT_APP_API_ENDPOINT || '//localhost:8001',
+
+    };
+
+    var url = '/api/content'
+
+    $.ajax({
+      url: url,
+      success: function (result) {
+        debugger
+        if (result.isOk == false) {
+        }
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        debugger
+        alert(jqXHR.status)
+      },
+      async: false
+    });
+
   }
 
   render() {
     return (
       <Router>
-        <div>
+        <div className="application" >
           <Switch>
-            <Redirect from="/" exact to={locale.url(this.state.locale, '', this.props)} />
+            <Redirect from="/" exact to={locale.url(this.state.locale, '')} />
           </Switch>
 
           <Route exact path="/:locale" component={Main} />
